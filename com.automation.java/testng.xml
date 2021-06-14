@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite Demo">
+  <listeners>
+    <listener class-name="com.testNG.ListnersDemo" />
+  </listeners>
+
+  <test thread-count="5" name="Learning testNG" parallel="false">
+  
+    <classes>
+      <class name="com.testNG.TC001"/>
+      <class name="com.testNG.TC002"/>
+       <class name="com.testNG.MyRetry"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
